@@ -7,4 +7,8 @@ router
   .route('/')
   .get(productController.index);
 
+router
+  .route('/test')
+  .get(productController.test);
+
 module.exports = router;
