@@ -2,7 +2,7 @@
 ## SETUP
 1. Get the project source code
       ```bash
-        git clone https://github.com/PonorogoCreativeIT/fabelio-monitoring-price
+        git clone http://gitlab.cazh.id/cukangcakung/fabelio-monitoring-price
         cd fabelio-monitoring-price
       ```
 2. Install Nodemon lib
@@ -15,12 +15,16 @@
       ```
 4. Run project on DEV environment
       ```bash
-      npm run dev
+      cd backend && npm run dev
       ```
 5. Application will be available on
       ```bash
       http://localhost:8886 (Default PORT: 8886)
       You can change port on .env file
+      ```
+6. Demo Site
+      ```bash
+      http://167.71.205.157:8886/
       ```
 
 ## Contact

@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 exports.fetchDataProduct = async (url) => {
   try {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle2' });
     const title = await page.$eval("head > meta[property='og:title']", (element) => element.content);
