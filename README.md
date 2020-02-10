@@ -2,7 +2,7 @@
 ## SETUP
 1. Get the project source code
       ```bash
-        git clone http://gitlab.cazh.id/cukangcakung/fabelio-monitoring-price
+        git clone https://github.com/PonorogoCreativeIT/fabelio-monitoring-price
         cd fabelio-monitoring-price
       ```
 2. Install Nodemon lib
