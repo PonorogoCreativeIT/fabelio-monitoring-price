@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "setup": "cp .env.example .env && npm install"
   },
   "dependencies": {
     "accounting": "^0.4.1",
