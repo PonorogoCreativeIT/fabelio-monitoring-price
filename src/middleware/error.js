@@ -7,7 +7,12 @@ exports.error = (err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+  if (err.status === 403) {
+    req.flash('error', err.message);
+    res.redirect('/');
+  } else {
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
+  }
 };

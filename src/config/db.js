@@ -5,5 +5,12 @@ const db = new Loki('FabelioMonitoringDB.db', {
   autosave: true,
   autosaveInterval: 4000,
 });
+exports.db = db;
 
-module.exports = db;
+exports.products = () => {
+  let products = db.getCollection('products');
+  if (!products) {
+    products = db.addCollection('products');
+  }
+  return products;
+};
