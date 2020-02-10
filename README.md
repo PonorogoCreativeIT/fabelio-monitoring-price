@@ -15,7 +15,7 @@
       ```
 4. Run project on DEV environment
       ```bash
-      cd backend && npm run dev
+      npm run dev
       ```
 5. Application will be available on
       ```bash
