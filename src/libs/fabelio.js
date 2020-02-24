@@ -2,6 +2,8 @@ const puppeteer = require('puppeteer');
 
 exports.fetchDataProduct = async (url) => {
   try {
+    // eslint-disable-next-line max-len
+    // const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
     const browser = await puppeteer.launch({
       args: [
         '--no-sandbox',
