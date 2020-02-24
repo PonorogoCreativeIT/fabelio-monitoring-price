@@ -24,7 +24,7 @@
       ```
 6. Demo Site
       ```bash
-      http://167.71.205.157:8886/
+      https://fabelio-app.herokuapp.com/
       ```
 
 ## Contact
